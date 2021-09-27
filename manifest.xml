@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>60978f6b-38bd-49d3-8f92-d73c816ca9cb</Id>
-  <Version>1.0.0.0</Version>
+  <Version>1.0.0</Version>
   <ProviderName>hdobysh</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Sheet Selector"/>
@@ -71,13 +71,13 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Click to Show the Sheet Selector Taskpane!"/>
+        <bt:String id="GetStarted.Title" DefaultValue="Click to Open the Sheet Selector Taskpane!"/>
         <bt:String id="hdobys.commands.group.Label" DefaultValue="Sheet Selector AddIn"/>
         <bt:String id="hdobysh.ss.button.Label" DefaultValue="Show Sheet Selector"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Go to the VIEW tab and click the 'Show Sheet Selector' button to get started."/>
-        <bt:String id="hdobysh.ss.button.Tooltip" DefaultValue="Click to Show the Sheet Selector Taskpane."/>
+        <bt:String id="hdobysh.ss.button.Tooltip" DefaultValue="Click to Open the Sheet Selector Taskpane."/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
