@@ -7,8 +7,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
-const urlDev = "https://localhost:3000/";
-const urlProd = "https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlDev = "https://localhost:3000";
+const urlProd = "https://zealous-moss-0a13d9100.azurestaticapps.net";
 
 module.exports = async (env, options) => {
   const dev = options.mode === "development";

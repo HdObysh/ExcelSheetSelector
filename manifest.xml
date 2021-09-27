@@ -8,9 +8,9 @@
   <Description DefaultValue="List and filter worksheets to select."/>
   <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://localhost:3000"/>
+  <SupportUrl DefaultValue="https://localhost:3000/"/>
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
+    <AppDomain>https://localhost:3000/</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
