@@ -73,10 +73,10 @@
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Click to Open the Sheet Selector Taskpane!"/>
         <bt:String id="hdobys.commands.group.Label" DefaultValue="Sheet Selector AddIn"/>
-        <bt:String id="hdobysh.ss.button.Label" DefaultValue="Show Sheet Selector"/>
+        <bt:String id="hdobysh.ss.button.Label" DefaultValue="Open Sheet Selector"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Go to the VIEW tab and click the 'Show Sheet Selector' button to get started."/>
+        <bt:String id="GetStarted.Description" DefaultValue="Go to the VIEW tab and click the 'Open Sheet Selector' button to get started."/>
         <bt:String id="hdobysh.ss.button.Tooltip" DefaultValue="Click to Open the Sheet Selector Taskpane."/>
       </bt:LongStrings>
     </Resources>

@@ -12,12 +12,10 @@ const urlProd = "https://zealous-moss-0a13d9100.azurestaticapps.net";
 
 module.exports = async (env, options) => {
   const dev = options.mode === "development";
-  const buildType = dev ? "dev" : "prod";
   const config = {
-    devtool: "source-map",
+    devtool: dev ? "eval-source-map" : "none",
     entry: {
       polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
-      vendor: ["react", "react-dom", "core-js", "@fluentui/react"],
       taskpane: ["react-hot-loader/patch", "./src/taskpane/index.tsx"],
       commands: "./src/commands/commands.ts",
     },
@@ -35,13 +33,6 @@ module.exports = async (env, options) => {
           test: /\.css$/,
           use: ["style-loader", "css-loader"],
         },
-        {
-          test: /\.(png|jpg|jpeg|gif)$/,
-          loader: "file-loader",
-          options: {
-            name: "[path][name].[ext]",
-          },
-        },
       ],
     },
     plugins: [
@@ -53,8 +44,8 @@ module.exports = async (env, options) => {
             to: "taskpane.css",
           },
           {
-            from: "manifest*.xml",
-            to: "[name]." + buildType + ".[ext]",
+            from: "manifest.xml",
+            to: "sheet-selector-manifest.xml",
             transform(content) {
               if (dev) {
                 return content;
@@ -88,6 +79,12 @@ module.exports = async (env, options) => {
         Promise: ["es6-promise", "Promise"],
       }),
     ],
+    optimization: {
+      splitChunks: {
+        name: 'vendor',
+        chunks: 'initial',
+      }
+    },
     devServer: {
       hot: true,
       headers: {
