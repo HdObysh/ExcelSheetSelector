@@ -5,7 +5,6 @@ import Progress from "./Progress";
 /* global Excel  */
 
 export interface AppProps {
-  title: string;
   isOfficeInitialized: boolean;
 }
 
